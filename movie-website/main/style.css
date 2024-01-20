@@ -1,0 +1,170 @@
+
+body{
+    background-color: #000000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background: #141414;
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+}
+
+header{
+    background-color: rgb(189, 162, 11);
+    position: fixed;
+    width: 98%;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.logo{
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Navigation Bar */
+.home-btn{
+    background-color: rgb(189, 162, 11);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 22px 3px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 0.6em;
+    z-index: 2;
+}
+
+.movies-btn{
+    background-color: rgb(189, 162, 11);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 22px 3px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 0.6em;
+    z-index: 2;
+}
+
+.tvshows-btn{
+    background-color: rgb(189, 162, 11);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 22px 3px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 0.6em;
+    z-index: 2;
+}
+
+.categories-btn{
+    background-color: rgb(189, 162, 11);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 22px 3px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 0.6em;
+    z-index: 2;
+}
+
+/* Search Bar */
+form{
+    position: fixed;
+    display: flex;
+    top: 18px;
+    margin-left: 370px;
+    transform: translate( 10%, 10%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid rgb(250, 248, 248);
+    padding: 5px;
+    z-index: 2;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 1px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 60%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+    color: white;
+}
+
+.search-box{  
+    border-radius: 40px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    padding: 9px 40px;
+    margin-left: 200px;
+}
+.search-box:hover{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px 0px rgb(243, 243, 243);
+}  
+
+@media (max-width: 768px) {
+    form {
+        margin-left: 10%;
+    }
+}
