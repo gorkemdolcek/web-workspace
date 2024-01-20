@@ -1,0 +1,200 @@
+body {
+    background-color: #8d8f14;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 5px;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 98%;
+    display: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: -100px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.3s;
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.small {
+    padding: 5px;
+}
+
+.logo.small {
+    width: 80px;
+}
+
+.navigation.small .category-btn {
+    padding: 8px 16px;
+}
+
+.logo{
+    width: 150px;
+    margin-right: 5px;
+    
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-image {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-btn {
+    background-color: transparent;
+    border: none;
+    color: #e5e5e5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.profile-btn img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.profile-dropdown-content a {
+    color: #e5e5e5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-dropdown-content a:hover {
+    background-color: #333;
+}
+
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+/* Navigation Buttons  */
+
+.categories-btn{
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 22px 3px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 0.6em;
+    z-index: 2;
+}
+
+.category-btn {
+    background-color: transparent;
+    border: none;
+    color: #e5e5e5;
+    padding: 22px 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 0.8em;
+    z-index: 2;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.home-btn.category-btn,
+.movies-btn.category-btn,
+.tvshows-btn.category-btn,
+.categories-btn.category-btn {
+    color: #ada4a1;
+}
+
+.home-btn:hover,
+.movies-btn:hover,
+.tvshows-btn:hover,
+.categories-btn:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* Navigation Search Bar */
+
+.search-container {
+    position: relative;
+}
+
+.search-bar-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #141414;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-container input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.close-search-btn {
+    background-color: transparent;
+    border: none;
+    color: #e5e5e5;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+/* Content */
+
+.content-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
